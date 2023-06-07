@@ -33,21 +33,6 @@ R[slot_number]: Read slot number
 W[slot_number]: Write slot number
 C[slot_number]: Clear slot
 D: Dump all slots
-
- 3.3V
-  |                   /
- <                   /
-   > 4.7k           /
- <                 /
-   >              /
-  |              /
-  |--GPIO       /
-  |         |-||
-  |--CENTER(| ||
-            |-||
-  |-------SHELL
-  |
- GND
  
 The serials are 8 bytes long, but the first is always 0C (the family code),
 and the last is always a CRC (calculated value). So, only 6 bytes are user-programmable.
